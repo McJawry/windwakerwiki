@@ -1,0 +1,8 @@
+{
+  "title": "Our Wiki",
+  "icon": "📚",
+  "repo": "",
+  "branch": "",
+  "contentDir": "wiki",
+  "directCommit": true
+}

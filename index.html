@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wiki</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    try { const t = localStorage.getItem('wiki:theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
+</head>
+<body>
+  <div id="app">
+    <aside id="side" aria-label="Pages">
+      <a class="brand" href="#/"><span id="brandIcon">📚</span><span id="brandTitle">Wiki</span></a>
+      <button id="searchBtn" class="side-search" type="button"><span>🔍</span><span class="grow">Search</span><kbd id="kbd">Ctrl K</kbd></button>
+      <nav id="tree" aria-label="Page tree"></nav>
+      <div class="side-foot">
+        <button id="newRoot" class="side-btn" type="button">＋ New page</button>
+        <div class="row">
+          <button id="accountBtn" class="side-btn grow" type="button">Sign in</button>
+          <button id="themeBtn" class="side-btn icon" type="button" title="Toggle theme" aria-label="Toggle theme">◐</button>
+        </div>
+      </div>
+    </aside>
+    <div id="scrim"></div>
+    <main id="main">
+      <header id="top">
+        <button id="menuBtn" class="icon-btn" type="button" aria-label="Menu">☰</button>
+        <nav id="crumbs" aria-label="Breadcrumb"></nav>
+        <div class="grow"></div>
+        <div id="actions"></div>
+      </header>
+      <div id="scroll">
+        <div id="wrap">
+          <article id="page"></article>
+          <aside id="toc" aria-label="On this page"></aside>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div id="overlay" hidden></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>This wiki needs JavaScript to run.</noscript>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

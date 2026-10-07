@@ -1,0 +1,114 @@
+{
+ "generated": "2026-10-06T23:35:04.266Z",
+ "pages": [
+  {
+   "id": "getting-started",
+   "file": "getting-started.md",
+   "title": "Getting started",
+   "icon": "🚀",
+   "tags": [
+    "setup",
+    "github"
+   ],
+   "order": 2,
+   "text": "Getting started You can run your own copy of this wiki for free on GitHub Pages. Create a repository and upload these files (or use it as a template). In the repository, open Settings → Pages and set Source to GitHub Actions. Push to main. The included workflow builds the page index and publishes the site. Open https:// .github.io/ / — your wiki is live. On github.io addresses the repository is detected automatically. Anywhere else, set \"repo\": \"owner/name\" in config.json. Letting people edit There are two kinds of contributors: Who What they do What happens Collaborators Create a fine-grained token with Contents and Pull requests access Edits publish directly, or as a pull request if they choose Everyone else Create a classic token with the public_repo scope The editor forks the repo and opens a pull request for you to review Tokens never leave the contributor's browser except to talk to GitHub. Good to know The live site refreshes about a minute after a change lands, because GitHub Pages has to redeploy. Set \"directCommit\": false in config.json to require review for everyone, including you. Pages are plain Markdown in the wiki/ folder, so you can also edit them in any text editor and push as usual. Back to Welcome.",
+   "links": [
+    "Welcome"
+   ]
+  },
+  {
+   "id": "how-to-edit-pages",
+   "file": "how-to-edit-pages.md",
+   "title": "How to edit pages",
+   "icon": "✏️",
+   "tags": [
+    "editing",
+    "tutorial"
+   ],
+   "order": null,
+   "text": "How to edit pages Click ✎ Edit at the top right (or press E). Everything on the page becomes editable, and nothing is saved until you press Save. Writing blocks Every paragraph, heading, list item, and picture is a block. Hover a block to see its handles on the left: + adds a new block below ⋮⋮ opens a menu to turn it into something else, duplicate it, or delete it — drag it to move it Type / on an empty line to open the command menu and pick a block type. Shortcuts that save time You type You get # , ## , ### Headings - or Bulleted list 1. Numbered list [] To-do list > Quote --- then Enter Divider [[ Link to another page Select any text to get the formatting bar: bold, italic, strikethrough, code, and links. Tab and Shift+Tab indent list items. Examples Click the icon on a callout to cycle through Note, Tip, Important, Warning and Caution. Learn the slash menu Link to a page with [[ Try nesting this item with Tab // Code blocks keep their formatting const greet = (name) => Hello, ${name}!; Saving When you press Save, you will be asked to sign in with a GitHub token the first time. Then either your change goes live right away, or it is sent as a pull request — whichever your permissions allow. See Getting started for the details.",
+   "links": [
+    "Getting started"
+   ]
+  },
+  {
+   "id": "index",
+   "file": "index.md",
+   "title": "Welcome",
+   "icon": "🏠",
+   "tags": [
+    "start-here"
+   ],
+   "order": null,
+   "text": "Welcome to the wiki This is a shared knowledge base that anyone on the team can improve. Pages are stored as plain Markdown files in a GitHub repository, but you never have to touch Markdown — just click Edit and write, like in Notion. Press Ctrl K (or ⌘ K) to search every page, or type inside a page to link to another one. Where to start [[How to edit pages — a two-minute tour of the editor Getting started — setting up and publishing your own copy of this wiki Team handbook — an example of nested pages Style guide — keeping pages consistent Why a wiki? Good notes stay useful when they are easy to find, easy to link, and easy to fix. Every page here keeps its full history in Git, so nothing is ever lost, and edits from people without write access arrive as pull requests that can be reviewed first. Who can edit? Anyone with a GitHub account. People with write access to the repository publish straight away; everyone else sends their edit as a pull request.",
+   "links": [
+    "` inside a page to link to another one.\n\n## Where to start\n\n- [[How to edit pages",
+    "Getting started",
+    "Team handbook",
+    "Style guide"
+   ]
+  },
+  {
+   "id": "style-guide",
+   "file": "style-guide.md",
+   "title": "Style guide",
+   "icon": "🎨",
+   "tags": [
+    "writing"
+   ],
+   "order": null,
+   "text": "Style guide Small habits that keep a shared wiki pleasant to read. Titles and structure Name pages for what people will search for, not for how you think about them. Start with one sentence that says what the page is for. Use headings freely — the outline on the right is built from them. Linking Link generously with Page title. A red dashed link means the page doesn't exist yet; click it to create it. Pages that link here appear under Linked from at the bottom of each page, so you never need to maintain \"see also\" lists by hand. Keep it tidy Never paste passwords, tokens, or private customer data into a page. The repository history keeps everything. See also Team handbook and How to edit pages.",
+   "links": [
+    "Page title",
+    "Team handbook",
+    "How to edit pages"
+   ]
+  },
+  {
+   "id": "team",
+   "file": "team.md",
+   "title": "Team handbook",
+   "icon": "👥",
+   "tags": [
+    "team"
+   ],
+   "order": 3,
+   "text": "Team handbook How we work together. Each section below lives on its own page, nested under this one — look in the sidebar. Meetings Onboarding checklist",
+   "links": [
+    "Meetings",
+    "Onboarding checklist"
+   ]
+  },
+  {
+   "id": "team/meetings",
+   "file": "team/meetings.md",
+   "title": "Meetings",
+   "icon": "📅",
+   "tags": [
+    "team",
+    "process"
+   ],
+   "order": null,
+   "text": "Meetings Weekly sync Mondays, 15 minutes. Bring one update and one blocker. Agenda template Wins since last week Blockers Plans for this week Related: Onboarding checklist.",
+   "links": [
+    "Onboarding checklist"
+   ]
+  },
+  {
+   "id": "team/onboarding-checklist",
+   "file": "team/onboarding-checklist.md",
+   "title": "Onboarding checklist",
+   "icon": "✅",
+   "tags": [
+    "team",
+    "onboarding"
+   ],
+   "order": null,
+   "text": "Onboarding checklist Get access to the repository Read the Style guide Make your first edit — fix a typo, add a link, anything Say hi at the Meetings weekly sync",
+   "links": [
+    "Style guide",
+    "Meetings"
+   ]
+  }
+ ]
+}
